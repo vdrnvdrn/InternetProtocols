@@ -21,7 +21,6 @@ command = "tracert " + target_address
 os.system("chcp 65001 > nul")
 os.system(command + ">> temp.txt")
 
-myMap = {}
 with open('temp.txt', 'r') as f:
     for i in range(3):
         f.readline()
@@ -75,8 +74,6 @@ with open('temp.txt', 'r') as f:
                 print(n + ". *")
                 print()
 
-    #for key, value in myMap.items():
-        #print(key + ". " + value)
 
-path = 'C:/Users/Semyon/PycharmProjects/tracert/temp.txt'
+path = 'C:/Users/Semyon/Documents/GitHub/InternetProtocols/TRACERT/task/temp.txt'
 os.remove(path)
